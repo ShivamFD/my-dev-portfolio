@@ -38,7 +38,7 @@ const Home = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-300">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -77,11 +77,12 @@ const Home = () => {
           {/* Main Heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-7xl font-bold mb-6"
+            className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white"
           >
             Hi, I'm{' '}
-            <span className="gradient-text bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600">
+            <span className="gradient-text">
               John Doe
+              {/* Shivam Vishwakarma */}
             </span>
           </motion.h1>
 
@@ -96,10 +97,10 @@ const Home = () => {
           {/* Description */}
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-500 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            I create beautiful, functional, and user-friendly web applications 
-            using modern technologies. Passionate about clean code and 
+            I create beautiful, functional, and user-friendly web applications
+            using modern technologies. Passionate about clean code and
             innovative solutions.
           </motion.p>
 
@@ -111,7 +112,7 @@ const Home = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-3"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-3"
             >
               <span>Hire Me</span>
               <RiArrowRightLine className="group-hover:translate-x-1 transition-transform duration-300" />
@@ -120,7 +121,7 @@ const Home = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group glass-effect border border-gray-300 dark:border-gray-600 px-8 py-4 rounded-2xl font-semibold text-lg text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 flex items-center space-x-3"
+              className="glass-effect border border-gray-300 dark:border-gray-600 px-8 py-4 rounded-2xl font-semibold text-lg text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 flex items-center space-x-3"
             >
               <RiDownloadLine />
               <span>Download CV</span>
@@ -137,12 +138,12 @@ const Home = () => {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center"
+              className="w-6 h-10 border-2 border-gray-400 dark:border-gray-500 rounded-full flex justify-center"
             >
               <motion.div
                 animate={{ y: [0, 12, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="w-1 h-3 bg-gray-400 rounded-full mt-2"
+                className="w-1 h-3 bg-gray-400 dark:bg-gray-500 rounded-full mt-2"
               />
             </motion.div>
           </motion.div>
