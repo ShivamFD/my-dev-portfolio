@@ -9,8 +9,10 @@ import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
+import { useTheme } from './context/ThemeContext';
 
 function App() {
+  const { theme } = useTheme();
   const pageVariants = {
     initial: { opacity: 0 },
     in: { opacity: 1 },
@@ -24,9 +26,9 @@ function App() {
   };
 
   return (
-    <div className="App bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div className={`App theme-${theme} bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-500`}>
       <Navbar />
-      
+
       <AnimatePresence mode="wait">
         <motion.div
           initial="initial"
