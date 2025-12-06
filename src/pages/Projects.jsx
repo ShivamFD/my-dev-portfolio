@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
-import { projectsData } from '../data/projects';
+import { projectsData } from '../data/project';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
