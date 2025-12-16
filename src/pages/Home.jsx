@@ -70,7 +70,7 @@ const Home = () => {
               animate="animate"
               className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-2xl"
             >
-              JD
+              SV
             </motion.div>
           </motion.div>
 
@@ -81,7 +81,7 @@ const Home = () => {
           >
             Hi, I'm{' '}
             <span className="gradient-text">
-              John Doe
+              Shivam Vishwakarma
               {/* Shivam Vishwakarma */}
             </span>
           </motion.h1>
