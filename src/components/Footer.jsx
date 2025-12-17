@@ -40,7 +40,7 @@ const Footer = () => {
             className="mb-6 md:mb-0"
           >
             <p className="text-gray-500 dark:text-gray-400">
-              © {currentYear} DevPortfolio. All rights reserved.
+              © {currentYear} Shivam Vishwakarma. All rights reserved.
             </p>
           </motion.div>
 
