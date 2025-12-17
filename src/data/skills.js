@@ -4,7 +4,7 @@ export const skillsData = [
       skills: [
         { name: "React", level: 90, icon: "RiReactjsLine" },
         { name: "JavaScript", level: 85, icon: "RiJavascriptLine" },
-        { name: "TypeScript", level: 80, icon: "RiTypescriptLine" },
+        { name: "TypeScript", level: 60, icon: "RiTypescriptLine" },
         { name: "HTML5", level: 95, icon: "RiHtml5Line" },
         { name: "CSS3", level: 90, icon: "RiCss3Line" },
         { name: "Tailwind CSS", level: 85, icon: "RiTailwindCssLine" }
