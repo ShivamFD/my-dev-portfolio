@@ -77,7 +77,7 @@ const Home = () => {
           {/* Main Heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white"
+            className="text-4xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white"
           >
             Hi, I'm{' '}
             <span className="gradient-text">
