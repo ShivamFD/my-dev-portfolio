@@ -6,19 +6,19 @@ export const projectsData = [
     image: "/project1.jpg",
     technologies: ["React", "Node.js", "MongoDB"],
     githubLink: "#",
-    liveLink: "#",
+    liveLink: "https://happycrop.in/",
     featured: true
   },
-  {
-    id: 2,
-    title: "Rapid Medicology",
-    description: "Medical management system for rapid diagnostics and patient data handling.",
-    image: "/project2.jpg",
-    technologies: ["React", "Express", "PostgreSQL"],
-    githubLink: "#",
-    liveLink: "#",
-    featured: true
-  },
+  // {
+  //   id: 2,
+  //   title: "Rapid Medicology",
+  //   description: "Medical management system for rapid diagnostics and patient data handling.",
+  //   image: "/project2.jpg",
+  //   technologies: ["React", "Express", "PostgreSQL"],
+  //   githubLink: "#",
+  //   liveLink: "#",
+  //   featured: true
+  // },
   {
     id: 3,
     title: "Elev8",
@@ -26,7 +26,7 @@ export const projectsData = [
     image: "/project3.jpg",
     technologies: ["React Native", "Firebase"],
     githubLink: "#",
-    liveLink: "#",
+    liveLink: "https://elev8edge.com/",
     featured: true
   },
   {
@@ -34,9 +34,9 @@ export const projectsData = [
     title: "Medicare",
     description: "Healthcare appointment booking and medical record management system.",
     image: "/project4.jpg",
-    technologies: ["React", "Redux", "Node.js"],
+    technologies: ["React", "MongoDB", "Node.js"],
     githubLink: "#",
-    liveLink: "#",
+    liveLink: "https://medicare.stellarabodes.in/",
     featured: false
   },
   {
@@ -44,17 +44,17 @@ export const projectsData = [
     title: "VKPH Motors",
     description: "Automotive dealership website showcasing vehicles and services.",
     image: "/project1.jpg",
-    technologies: ["Next.js", "Tailwind CSS"],
+    technologies: ["React", "Node.js", "MongoDB"],
     githubLink: "#",
     liveLink: "https://vkphmotors.com",
     featured: false
   },
   {
     id: 6,
-    title: "Shree Haro Grocery",
+    title: "Shree Hari Grocery",
     description: "E-commerce grocery store for local delivery and inventory management.",
     image: "/project2.jpg",
-    technologies: ["MERN Stack"],
+    technologies: ["React", "Node.js", "MongoDB"],
     githubLink: "#",
     liveLink: "#",
     featured: false
@@ -64,9 +64,9 @@ export const projectsData = [
     title: "Anil Darshan Foundation",
     description: "Non-profit organization website for charity and community outreach.",
     image: "/project3.jpg",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["React", "Framer-motion", "Tailwind CSS"],
     githubLink: "#",
-    liveLink: "#",
+    liveLink: "https://aniildarrshanfoundation.com/",
     featured: false
   }
 ];
