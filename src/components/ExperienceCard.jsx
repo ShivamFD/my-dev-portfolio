@@ -4,18 +4,18 @@ import { RiBriefcaseLine, RiGraduationCapLine } from 'react-icons/ri';
 
 const ExperienceCard = ({ experience, index }) => {
   const isWork = experience.type === 'work';
-  
+
   const cardVariants = {
-    hidden: { 
-      opacity: 0, 
-      x: index % 2 === 0 ? -50 : 50 
+    hidden: {
+      opacity: 0,
+      x: index % 2 === 0 ? -50 : 50
     },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       x: 0,
-      transition: { 
-        duration: 0.6, 
-        delay: index * 0.2 
+      transition: {
+        duration: 0.6,
+        delay: index * 0.2
       }
     }
   };
@@ -26,35 +26,26 @@ const ExperienceCard = ({ experience, index }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className={`relative flex ${
-        index % 2 === 0 ? 'justify-start' : 'justify-end'
-      } mb-12`}
+      className="relative flex justify-start mb-12"
     >
       {/* Timeline dot */}
-      <div className={`absolute top-6 ${
-        index % 2 === 0 ? 'left-6' : 'right-6'
-      } w-4 h-4 rounded-full ${
-        isWork 
-          ? 'bg-blue-500 ring-4 ring-blue-200 dark:ring-blue-900/30' 
+      <div className={`absolute top-6 left-6 w-4 h-4 rounded-full ${isWork
+          ? 'bg-blue-500 ring-4 ring-blue-200 dark:ring-blue-900/30'
           : 'bg-purple-500 ring-4 ring-purple-200 dark:ring-purple-900/30'
-      } z-10`} />
+        } z-10`} />
 
       {/* Content Card */}
-      <div className={`glass-effect rounded-2xl p-6 shadow-lg border ${
-        isWork 
-          ? 'border-blue-200 dark:border-blue-800' 
+      <div className={`glass-effect rounded-2xl p-6 shadow-lg border ${isWork
+          ? 'border-blue-200 dark:border-blue-800'
           : 'border-purple-200 dark:border-purple-800'
-      } w-full max-w-md ${
-        index % 2 === 0 ? 'ml-12' : 'mr-12'
-      }`}>
+        } w-full max-w-md ml-12`}>
         {/* Header */}
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center space-x-3">
-            <div className={`p-2 rounded-lg ${
-              isWork 
-                ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600' 
+            <div className={`p-2 rounded-lg ${isWork
+                ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600'
                 : 'bg-purple-100 dark:bg-purple-900/30 text-purple-600'
-            }`}>
+              }`}>
               {isWork ? <RiBriefcaseLine size={20} /> : <RiGraduationCapLine size={20} />}
             </div>
             <div>
@@ -69,11 +60,10 @@ const ExperienceCard = ({ experience, index }) => {
         </div>
 
         {/* Period */}
-        <div className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 ${
-          isWork 
-            ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300' 
+        <div className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 ${isWork
+            ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
             : 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300'
-        }`}>
+          }`}>
           {experience.period}
         </div>
 
