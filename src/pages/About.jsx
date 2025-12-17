@@ -74,7 +74,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <motion.div
             variants={containerVariants}
@@ -87,15 +87,15 @@ const About = () => {
               variants={itemVariants}
               className="relative mb-8"
             >
-              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-white text-6xl font-bold shadow-2xl">
+              <div className="w-64 h-64 md:w-80 md:h-80 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-white text-6xl font-bold shadow-2xl">
                 JD
               </div>
               <motion.div
-                animate={{ 
+                animate={{
                   rotate: 360,
                   scale: [1, 1.1, 1]
                 }}
-                transition={{ 
+                transition={{
                   rotate: { duration: 20, repeat: Infinity, ease: "linear" },
                   scale: { duration: 4, repeat: Infinity }
                 }}
@@ -143,8 +143,8 @@ const About = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed"
             >
-              Hello! I'm John Doe, a passionate Full Stack Developer with over 3 years of experience 
-              creating web applications that solve real-world problems. I specialize in modern 
+              Hello! I'm John Doe, a passionate Full Stack Developer with over 3 years of experience
+              creating web applications that solve real-world problems. I specialize in modern
               JavaScript technologies including React, Node.js, and cloud platforms.
             </motion.p>
 
@@ -152,8 +152,8 @@ const About = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed"
             >
-              My journey in web development started during my computer science degree, and I've been 
-              hooked ever since. I love turning complex problems into simple, beautiful, and 
+              My journey in web development started during my computer science degree, and I've been
+              hooked ever since. I love turning complex problems into simple, beautiful, and
               intuitive solutions.
             </motion.p>
 
