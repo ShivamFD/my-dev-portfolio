@@ -27,10 +27,10 @@ const About = () => {
   };
 
   const stats = [
-    { number: "50+", label: "Projects Completed" },
-    { number: "3+", label: "Years Experience" },
-    { number: "30+", label: "Happy Clients" },
-    { number: "15+", label: "Technologies" }
+    { number: "15+", label: "Projects Completed" },
+    { number: "1+", label: "Year Experience" },
+    { number: "10+", label: "Happy Clients" },
+    { number: "5+", label: "Technologies" }
   ];
 
   const features = [
@@ -88,7 +88,7 @@ const About = () => {
               className="relative mb-8"
             >
               <div className="w-64 h-64 md:w-80 md:h-80 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-white text-6xl font-bold shadow-2xl">
-                JD
+                SV
               </div>
               <motion.div
                 animate={{
@@ -143,7 +143,7 @@ const About = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed"
             >
-              Hello! I'm John Doe, a passionate Full Stack Developer with over 3 years of experience
+              Hello! I'm Shivam Vishwakarma, a passionate Full Stack Developer with 1 year of experience
               creating web applications that solve real-world problems. I specialize in modern
               JavaScript technologies including React, Node.js, and cloud platforms.
             </motion.p>
