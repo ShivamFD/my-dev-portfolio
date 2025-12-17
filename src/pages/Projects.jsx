@@ -6,11 +6,11 @@ import { projectsData } from '../data/project';
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
-  const filteredProjects = filter === 'all' 
-    ? projectsData 
-    : projectsData.filter(project => 
-        filter === 'featured' ? project.featured : true
-      );
+  const filteredProjects = filter === 'all'
+    ? projectsData
+    : projectsData.filter(project =>
+      filter === 'featured' ? project.featured : true
+    );
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -47,11 +47,10 @@ const Projects = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setFilter(filterType)}
-                className={`px-6 py-3 rounded-2xl font-semibold transition-all duration-300 ${
-                  filter === filterType
+                className={`px-6 py-3 rounded-2xl font-semibold transition-all duration-300 ${filter === filterType
                     ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
                     : 'glass-effect text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
-                }`}
+                  }`}
               >
                 {filterType.charAt(0).toUpperCase() + filterType.slice(1)}
               </motion.button>
@@ -65,12 +64,12 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {filteredProjects.map((project, index) => (
-            <ProjectCard 
-              key={project.id} 
-              project={project} 
+            <ProjectCard
+              key={project.id}
+              project={project}
               index={index}
             />
           ))}
